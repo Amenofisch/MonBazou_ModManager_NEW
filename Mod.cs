@@ -13,7 +13,7 @@ namespace MonBazou_ModManager
         public string? Type { get; set; }
         public string? dllName { get; set; }
         public string? zipName { get; set; }
-        public bool Disabled { get; set; }
+        public bool? Disabled { get; set; }
         public string? Reason { get; set; }
     }
 }

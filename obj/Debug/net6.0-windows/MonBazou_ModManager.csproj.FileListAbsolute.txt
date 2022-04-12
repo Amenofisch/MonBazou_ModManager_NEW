@@ -24,7 +24,6 @@ B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\bin\Debug\net6.0-windows\MonBazou
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.csproj.AssemblyReference.cache
-B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.Form1.resources
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.csproj.GenerateResource.cache
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.GeneratedMSBuildEditorConfig.editorconfig
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.AssemblyInfoInputs.cache
@@ -35,3 +34,4 @@ B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\ref\MonBazou_ModManager.dll
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.pdb
 B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.genruntimeconfig.cache
+B:\00 - projects\mb_mm\MonBazou_ModManager_NEW\obj\Debug\net6.0-windows\MonBazou_ModManager.MainWindow.resources

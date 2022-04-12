@@ -13,12 +13,10 @@ namespace MonBazou_ModManager
     internal class Handler
     {
         public static string InstallLoc { get; set; }
-        public static string Changelog { get; set; }
 
         public static void Init()
         {
             GetInstallLoc();
-            GetChangelog();
         }
 
         public static void GetInstallLoc()
@@ -63,24 +61,30 @@ namespace MonBazou_ModManager
                             File.WriteAllText("dir.txt", createText);
                             InstallLoc = fbd.SelectedPath.ToString() + "\\";
                             return;
+                        } else
+                        {
+                            MessageBox.Show("You selected the wrong folder!");
+                            Application.Exit();
+                            Application.ExitThread();
+                            return;
                         }
                     }
                 }
             }
         }
 
-        public async static void GetChangelog()
+        public async static Task<string> GetChangelog()
         {
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    Changelog = await client.GetStringAsync(Constants.changelogUrl);
-                    MessageBox.Show(Changelog);
+                    return await client.GetStringAsync(Constants.changelogUrl);
                 }
             } catch (Exception ex)
             {
                 MessageBox.Show("Error while retrieving changelog! \n" + ex.ToString(), "Mod Manager - Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return "Couldn't load changelog!";
             }
         }
 

@@ -12,6 +12,6 @@ namespace MonBazou_ModManager
         public static string UpdateUrl = "";
         public static string changelogUrl = "https://monbazou.level2studios.co.uk/mods/changelog.txt";
         public static string currentVersion = "1.0";
-        public static string currentGameVersion = "0.272";
+        public static string currentGameVersion = "0.277";
     }
 }

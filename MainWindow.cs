@@ -2,9 +2,9 @@ using System.ComponentModel;
 
 namespace MonBazou_ModManager
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -13,7 +13,7 @@ namespace MonBazou_ModManager
         {
             Handler.Init();
             List<Mod> mods = new List<Mod>();
-            changelogTextBox.Text = Handler.Changelog;
+            changelogTextBox.Text = await Handler.GetChangelog();
             foreach(Mod Mod in Handler.GetModListData())
             {
                 mods.Add(Mod);
