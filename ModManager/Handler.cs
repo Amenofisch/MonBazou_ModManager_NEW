@@ -1,5 +1,4 @@
-﻿using System.Net;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using Newtonsoft.Json;
 using MonBazou_ModManager.Model;
 
@@ -7,14 +6,14 @@ namespace MonBazou_ModManager;
 
 internal class Handler
 {
-    public static string InstallLoc { get; set; }
+    private static string InstallLoc { get; set; } = null!;
 
     public static void Init()
     {
         GetInstallLoc();
     }
 
-    public static void GetInstallLoc()
+    private static void GetInstallLoc()
     {
         try
         {
@@ -54,12 +53,10 @@ internal class Handler
 
             if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
             {
-                var files = Directory.GetFiles(fbd.SelectedPath);
-
                 if (File.Exists(fbd.SelectedPath + "\\Mon Bazou.exe"))
                 {
                     InstallLoc = fbd.SelectedPath;
-                    string createText = fbd.SelectedPath;
+                    var createText = fbd.SelectedPath;
                     File.WriteAllText("dir.txt", createText);
                     InstallLoc = fbd.SelectedPath + "\\";
                 }
