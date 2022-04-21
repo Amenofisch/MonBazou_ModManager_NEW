@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace MonBazou_ModManager
+namespace MonBazou_ModManager.Model
 {
     internal class Mod
     {

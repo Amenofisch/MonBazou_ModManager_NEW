@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MonBazou_ModManager
+namespace MonBazou_ModManager.Model
 {
     internal class Constants
     {
