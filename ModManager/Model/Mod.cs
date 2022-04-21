@@ -1,10 +1,8 @@
-﻿using System.Collections;
-
-namespace MonBazou_ModManager.Model
+﻿namespace MonBazou_ModManager.Model
 {
     internal class Mod
     {
-        public int? id { get; set; }
+        public int? Id { get; set; }
         public string? Name { get; set; }
         public string? Author { get; set; }
         public string? Description { get; set; }
@@ -15,6 +13,6 @@ namespace MonBazou_ModManager.Model
         public string? FileName { get; set; }
         public bool? Disabled { get; set; }
         public string? Reason { get; set; }
-        public string? downloadLink { get; set; }
+        public string? DownloadLink { get; set; }
     }
 } 
