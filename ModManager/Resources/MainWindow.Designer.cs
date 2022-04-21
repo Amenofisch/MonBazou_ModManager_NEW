@@ -61,7 +61,7 @@ namespace MonBazou_ModManager.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Main Menu .
+        ///   Looks up a localized string similar to Main Menu.
         /// </summary>
         internal static string Tab_Main {
             get {
