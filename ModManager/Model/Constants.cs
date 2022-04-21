@@ -1,11 +1,11 @@
 ﻿namespace MonBazou_ModManager.Model
 {
-    internal class Constants
+    internal static class Constants
     {
-        public static string dbUrl = "https://monbazou.level2studios.co.uk/mods/testDb.txt";
-        public static string UpdateUrl = "";
-        public static string changelogUrl = "https://monbazou.level2studios.co.uk/mods/changelog.txt";
-        public static string currentVersion = "1.0";
-        public static string currentGameVersion = "0.277";
+        public const string DbUrl = "https://monbazou.level2studios.co.uk/mods/testDb.txt";
+        public const string UpdateUrl = "";
+        public const string ChangelogUrl = "https://monbazou.level2studios.co.uk/mods/changelog.txt";
+        public const string CurrentVersion = "1.0";
+        public const string CurrentGameVersion = "0.277";
     }
 }
