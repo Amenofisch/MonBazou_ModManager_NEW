@@ -22,11 +22,11 @@ namespace MonBazou_ModManager
             dataGridView1.Columns["Reason"].Visible = false;
             dataGridView1.Columns["Disabled"].Visible = false;
             dataGridView1.Columns["Type"].Visible = false;
-            dataGridView1.Columns["dllName"].Visible = false;
-            dataGridView1.Columns["zipName"].Visible = false;
+            dataGridView1.Columns["FileName"].Visible = false;
             dataGridView1.Columns["ModVersion"].Visible = false;
             dataGridView1.Columns["GameVersion"].Visible = false;
             dataGridView1.Columns["Description"].Visible = false;
+            dataGridView1.Columns["downloadLink"].Visible = false;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

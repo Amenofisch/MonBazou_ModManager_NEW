@@ -35,7 +35,7 @@ namespace MonBazou_ModManager
                     {
                         throw new Exception("Couldn't Auto-Locate Install Folder!");
                     }
-                    DialogResult result = MessageBox.Show(InstallLoc + "\n Is this the correct location of your game?", "Mod Manager", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show(InstallLoc + "\nIs this the correct location of your game?", "Mod Manager", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if(result == DialogResult.No && !string.IsNullOrWhiteSpace(InstallLoc))
                     {
                         throw new Exception("Wrong Folder");
@@ -43,7 +43,7 @@ namespace MonBazou_ModManager
                 }
             } catch (Exception ex)
             {
-                MessageBox.Show(ex.Message + "\nPlease select your game's Install Location in the Folder Browser!", "Mod Manager");
+                MessageBox.Show(ex.Message + "\nPlease select your Game's Install Location in the Folder Browser!", "Mod Manager");
                 using (var fbd = new FolderBrowserDialog())
                 {
                     fbd.Description = "Select Mon Bazou Folder!";
