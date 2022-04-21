@@ -61,7 +61,7 @@
             this.mainTab.Padding = new System.Windows.Forms.Padding(3);
             this.mainTab.Size = new System.Drawing.Size(994, 456);
             this.mainTab.TabIndex = 0;
-            this.mainTab.Text = "Main Menu";
+            this.mainTab.Text = Resources.MainWindow.Tab_Main;
             this.mainTab.UseVisualStyleBackColor = true;
             // 
             // changelogTextBox
@@ -81,7 +81,7 @@
             this.modsTab.Padding = new System.Windows.Forms.Padding(3);
             this.modsTab.Size = new System.Drawing.Size(994, 456);
             this.modsTab.TabIndex = 1;
-            this.modsTab.Text = "Mods";
+            this.modsTab.Text = Resources.MainWindow.Tab_Mods;
             this.modsTab.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -108,7 +108,7 @@
             this.savesPage.Padding = new System.Windows.Forms.Padding(3);
             this.savesPage.Size = new System.Drawing.Size(994, 456);
             this.savesPage.TabIndex = 2;
-            this.savesPage.Text = "Saves";
+            this.savesPage.Text = Resources.MainWindow.Tab_Saves;
             this.savesPage.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -119,7 +119,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(232, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Work in Progress...";
+            this.label1.Text = Resources.MainWindow.Work_In_Progress;
             // 
             // MainWindow
             // 
@@ -133,7 +133,7 @@
             this.Name = "MainWindow";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mon Bazou - Mod Manager V69420";
+            this.Text = "Mon Bazou - " + Resources.Handler.Mod_Manager + " V69420";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.mainTab.ResumeLayout(false);

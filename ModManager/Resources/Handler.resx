@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Mod_Manager" xml:space="preserve">
+        <value>Mod Manager</value>
+    </data>
+    <data name="Correct_Location" xml:space="preserve">
+        <value>
+Is this the correct location of your game?</value>
+    </data>
+    <data name="Select_Game_Install_Location" xml:space="preserve">
+        <value>Please select your Game's Install Location in the Folder Browser!</value>
+    </data>
+    <data name="Select_Mon_Bazou_Folder" xml:space="preserve">
+        <value>Select the Mon Bazou Folder!</value>
+    </data>
+    <data name="You_Have_Selected_The_Wrong_Folder" xml:space="preserve">
+        <value>You have selected the wrong folder!</value>
+    </data>
+    <data name="Error" xml:space="preserve">
+        <value>Error</value>
+    </data>
+    <data name="Error_While_Retrieving_Changelog" xml:space="preserve">
+        <value>Error while retrieving changelog!</value>
+    </data>
+    <data name="Error_While_Loading_Mod_List" xml:space="preserve">
+        <value>Error while loading Mod List</value>
+    </data>
+    <data name="Wrong_Folder" xml:space="preserve">
+        <value>Wrong Folder</value>
+    </data>
+    <data name="Could_Not_Locate_Install_Folder" xml:space="preserve">
+        <value>Couldn't Auto-Locate Install Folder!</value>
+    </data>
+</root>
