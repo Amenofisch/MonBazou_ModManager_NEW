@@ -4,7 +4,7 @@ using MonBazou_ModManager.Model;
 
 namespace MonBazou_ModManager;
 
-internal class Handler
+internal static class Handler
 {
     private static string InstallLoc { get; set; } = null!;
 
@@ -28,26 +28,26 @@ internal class Handler
                 }
                 else
                 {
-                    throw new Exception("Couldn't Auto-Locate Install Folder!");
+                    throw new Exception(Resources.Handler.Could_Not_Locate_Install_Folder);
                 }
             }
             else
             {
-                throw new Exception("Couldn't Auto-Locate Install Folder!");
+                throw new Exception(Resources.Handler.Could_Not_Locate_Install_Folder);
             }
 
-            var result = MessageBox.Show(InstallLoc + "\nIs this the correct location of your game?", "Mod Manager", MessageBoxButtons.YesNo,
+            var result = MessageBox.Show(InstallLoc + Resources.Handler.Correct_Location, Resources.Handler.Mod_Manager, MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
             if (result == DialogResult.No && !string.IsNullOrWhiteSpace(InstallLoc))
             {
-                throw new Exception("Wrong Folder");
+                throw new Exception(Resources.Handler.Wrong_Folder);
             }
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message + "\nPlease select your Game's Install Location in the Folder Browser!", "Mod Manager");
+            MessageBox.Show(ex.Message + "\n" + Resources.Handler.Select_Game_Install_Location, Resources.Handler.Mod_Manager);
             using var fbd = new FolderBrowserDialog();
-            fbd.Description = "Select Mon Bazou Folder!";
+            fbd.Description = Resources.Handler.Select_Mon_Bazou_Folder;
 
             var result = fbd.ShowDialog();
 
@@ -62,7 +62,7 @@ internal class Handler
                 }
                 else
                 {
-                    MessageBox.Show("You selected the wrong folder!");
+                    MessageBox.Show(Resources.Handler.You_Have_Selected_The_Wrong_Folder);
                     Application.Exit();
                     Application.ExitThread();
                 }
@@ -79,8 +79,8 @@ internal class Handler
         }
         catch (Exception ex)
         {
-            MessageBox.Show("Error while retrieving changelog! \n" + ex, "Mod Manager - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return "Couldn't load changelog!";
+            MessageBox.Show(Resources.Handler.Error_While_Retrieving_Changelog + "\n" + ex, Resources.Handler.Mod_Manager + " - " + Resources.Handler.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return Resources.Handler.Error_While_Retrieving_Changelog;
         }
     }
 
@@ -96,7 +96,7 @@ internal class Handler
         }
         catch (Exception ex)
         {
-            MessageBox.Show("Error while loading Mod List \n" + ex, "Mod Manager - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(Resources.Handler.Error_While_Loading_Mod_List + "\n" + ex, Resources.Handler.Mod_Manager + " - " + Resources.Handler.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
             Application.Exit();
             Application.ExitThread();
             return new List<Mod>();
