@@ -1,5 +1,3 @@
-using MonBazou_ModManager.Model;
-
 namespace MonBazou_ModManager;
 
 public partial class MainWindow : Form
@@ -12,12 +10,9 @@ public partial class MainWindow : Form
     private async void Form1_Load(object sender, EventArgs e)
     {
         Handler.Init();
-        List<Mod> mods = new List<Mod>();
         changelogTextBox.Text = await Handler.GetChangelog();
-        foreach(Mod Mod in Handler.GetModListData())
-        {
-            mods.Add(Mod);
-        }
+        var mods = (await Handler.GetModListData()).ToList();
+        
         dataGridView1.DataSource = mods;
         dataGridView1.Columns["Reason"].Visible = false;
         dataGridView1.Columns["Disabled"].Visible = false;
