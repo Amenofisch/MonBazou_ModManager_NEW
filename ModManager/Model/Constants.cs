@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MonBazou_ModManager.Model
+﻿namespace MonBazou_ModManager.Model
 {
     internal class Constants
     {
